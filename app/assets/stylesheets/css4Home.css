@@ -1,3 +1,37 @@
 .navtext{
     color: aqua;
+    text-align: center;
+    width: 100%;
+}
+
+.separtionDiv{
+    height: 25px;
+}
+
+.buttondiv{
+    float: right;
+}
+
+.img1{
+    float: right;
+}
+
+.img2{
+    float: left;
+}
+
+.footer{
+    /* background-color: cadetblue; */
+    text-align: center;
+}
+
+.footertext{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 6px #07a0dd;
+}
+
+.footerdiv{
+    border-radius: 25px;
+    border: 2px solid #0c08e2;
 }

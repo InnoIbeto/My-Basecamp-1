@@ -13,21 +13,51 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <h6 class="navtext">I'm thrilled to announce this is my last project of Season 02 Fullstack.</h6>
+            <div class="navtext">
+                <h6 class="navtext">I'm thrilled to announce this is my last project of Season 02 Fullstack.</h6>
+            </div>
         </div>
     </nav>
+
+    <div class = "separtionDiv"></div>
+
+        <div class="container-sm">
+            <div class="row align-items-center">
+                <div class="col">
+                    <%= image_tag "BasecampLogo.PNG" %>
+                </div>
+
+                <div class="col">
+                    <div class = "buttondiv">
+                        <button type = "button" class = "btn btn-outline-primary">Sign Up</button>
+
+                        <button type = "button" class = "btn btn-outline-info">Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class = "separtionDiv"></div>
 
     <div class="container-sm">
         <div class="row align-items-center">
             <div class="col">
-
+            <%= link_to image_tag("BCPerson1.PNG", class: "img1") %>
             </div>
 
             <div class="col">
-
+            <%= link_to image_tag("BCPerson2.PNG", class: "img2") %>
             </div>
         </div>
     </div>
 
+
+    <div class="footer">
+        <h1 class = "footertext">Try now!</h1>
+        <h1 class = "footertext">&</h1>
+        <div class = "footerdiv">
+        <h1 class = "footertext">progress on more projects than you ever thought possible.</h1>
+        </div>
+    </div>
 </body>
 </html>
