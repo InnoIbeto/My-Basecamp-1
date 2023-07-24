@@ -20,7 +20,7 @@
     float: left;
 }
 
-.footer{
+.centercontent{
     /* background-color: cadetblue; */
     text-align: center;
 }
@@ -34,4 +34,5 @@
 .footerdiv{
     border-radius: 25px;
     border: 2px solid #0c08e2;
+    text-align: center;
 }

@@ -3,39 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <%= stylesheet_link_tag 'css4Home.css' %>
     <title>Document</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="navtext">
-                <h6 class="navtext">I'm thrilled to announce this is my last project of Season 02 Fullstack.</h6>
-            </div>
-        </div>
-    </nav>
-
     <div class = "separtionDiv"></div>
 
-        <div class="container-sm">
-            <div class="row align-items-center">
-                <div class="col">
-                    <%= image_tag "BasecampLogo.PNG" %>
-                </div>
+    <div class="container-sm">
+        <div class="row align-items-center">
+            <div class="col">
+                <%= image_tag "BasecampLogo.PNG" %>
+            </div>
 
-                <div class="col">
-                    <div class = "buttondiv">
-                        <button type = "button" class = "btn btn-outline-primary">Sign Up</button>
-
-                        <button type = "button" class = "btn btn-outline-info">Sign In</button>
-                    </div>
+            <div class="col">
+                <div class = "buttondiv">
+                    <%= link_to 'Sign Up', home_signup_path, class:"btn btn-outline-primary" %>
+                    <%= link_to 'Sign In', home_signin_path, class: "btn btn-outline-info" %>
                 </div>
             </div>
         </div>
+    </div>
 
     <div class = "separtionDiv"></div>
 
@@ -52,12 +39,12 @@
     </div>
 
 
-    <div class="footer">
+    <div class="centercontent">
         <h1 class = "footertext">Try now!</h1>
         <h1 class = "footertext">&</h1>
         <div class = "footerdiv">
-        <h1 class = "footertext">progress on more projects than you ever thought possible.</h1>
-        </div>
+            <h3 class = "footertext">progress on more projects than you ever thought possible.</h3>
+      </div>
     </div>
 </body>
 </html>
