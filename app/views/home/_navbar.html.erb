@@ -1,7 +1,36 @@
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-        <div class="navtext">
-            <h6 class="navtext">I'm thrilled to announce this is my first Rails webpage & my last project of Season 02 Fullstack.</h6>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <%= link_to(image_tag("mainlogo.png"), root_path) %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item dropdown" id = "mynavitem">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Actions
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+
+            <li><%= link_to 'Create project', new_project_path, class: "dropdown-item"%></li>
+
+            <li><hr class="dropdown-divider"></li>
+          
+            <li >
+              <%= link_to 'Projects', projects_path, class: "dropdown-item" %>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
     </div>
+  </div>
 </nav>
