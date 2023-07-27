@@ -1,7 +1,7 @@
-.navtext{
-    color: aqua;
-    text-align: center;
-    width: 100%;
+.text{
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-weight: 900;
 }
 
 .separtionDiv{
@@ -32,12 +32,27 @@
 }
 
 .footerdiv{
-    border-radius: 25px;
-    border: 2px solid #0c08e2;
+    /* border-radius: 25px;
+    border: 1px solid blue; */
     text-align: center;
 }
 
 
 #mynavitem{
-    padding-left: 20%;
+    padding-left: 40%;
+    
+}
+
+#projectdiv{
+
+    border-style: double;
+
+    border-color: #07a0dd;
+    
+    border-width: 5px;
+
+    width: 35%;
+
+    background: url(/assets/projectBG.jpg);
+    /* background-color: black; */
 }

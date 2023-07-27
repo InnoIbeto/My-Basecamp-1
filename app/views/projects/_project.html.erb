@@ -1,12 +1,19 @@
-<div id="<%= dom_id project %>">
-  <p>
-    <strong>Project title:</strong>
-    <%= project.project_title %>
-  </p>
+<div  id="<%= dom_id project %>">
 
-  <p>
-    <strong>Project description:</strong>
-    <%= project.project_description %>
-  </p>
+  <div id = "projectdiv" >
+    <span class = "text">
+      <p>
+        <strong >Project title:</strong>
+
+        "<%= project.project_title%>"
+
+      </p>
+        <hr>
+      <p>
+        <strong >Project description:</strong>
+        <%= project.project_description %>
+      </p>
+    </span>
+  </div>
 
 </div>

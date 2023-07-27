@@ -11,17 +11,22 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :project_title, style: "display: block" %>
-    <%= form.text_field :project_title %>
+
+  <div class = "text", id = "projectdiv">
+    <div>
+      <%= form.label :project_title, style: "display: block" %>
+      <%= form.text_field :project_title, class: "form-control"  %>
+    </div>
+
+    <div>
+      <%= form.label :project_description, style: "display: block" %>
+      <%= form.text_area :project_description, class: "form-control" %>
+    </div>
   </div>
 
   <div>
-    <%= form.label :project_description, style: "display: block" %>
-    <%= form.text_area :project_description %>
-  </div>
 
-  <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn btn-dark" %>
+
   </div>
 <% end %>
