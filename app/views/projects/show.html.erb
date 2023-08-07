@@ -1,14 +1,32 @@
 
-<%= render @project %>
+<div class = "separtionDiv"></div>
 
-<div>
-  <div>
-  <br>
-    <%= link_to "Edit this project", edit_project_path(@project), class: "btn btn-outline-secondary" %> |
-    <%= link_to "Back to projects", projects_path, class: "btn btn-outline-secondary" %>
+<div class="container-sm">
+  <div class="row align-items-center">
+
+  <div class="col">
+
+      
+    <%= render @project %>
+
+    <div>
+      <div>
+      <br>
+        <%= link_to "Edit this project", edit_project_path(@project), class: "btn btn-outline-secondary" %> |
+        <%= link_to "Back to projects", projects_path, class: "btn btn-outline-secondary" %>
+      </div>
+      <div>
+      <br>
+        <%= button_to "Delete project", @project, method: :delete, class: "btn btn-danger" %>
+      </div>
+    </div>
   </div>
-  <div>
-  <br>
-    <%= button_to "Delete project", @project, method: :delete, class: "btn btn-danger" %>
+
+  <div class="col">
+      <h1>
+        TBD
+      </h1>
+  </div>
   </div>
 </div>
+ 
