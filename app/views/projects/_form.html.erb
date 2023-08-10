@@ -22,6 +22,11 @@
       <%= form.label :project_description, style: "display: block" %>
       <%= form.text_area :project_description, class: "form-control", placeholder: "enter project description here" %>
     </div>
+
+    <div>
+      <%= form.number_field :user_id, id: :project_user_id, class:  "form-control", value: current_user.id, type: :hidden  %>
+    </div>
+
   </div>
 
   <div>
