@@ -56,3 +56,7 @@
     background: url(/assets/projectBG.jpg);
     /* background-color: black; */
 }
+
+.bg-class{
+    background: url(/assets/projectBG.jpg);
+}
