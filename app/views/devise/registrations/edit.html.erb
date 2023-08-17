@@ -9,7 +9,7 @@
         <div class="field form-group">
           <%= f.label :email %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
-        </div>
+        </div><br>
 
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
           <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
@@ -38,6 +38,13 @@
           <%= f.submit "Update", class: "btn btn-primary" %>
         </div>
       <% end %><br>
+
+      <% if current_user.admin%>
+        <h3>Switch to Admin profile</h3>
+
+        <%= link_to 'Admin Profile', admin_projects_path, class: 'btn btn-info' %><br><br>
+      <%end%>
+
 
       <h3>Cancel my account</h3>
 

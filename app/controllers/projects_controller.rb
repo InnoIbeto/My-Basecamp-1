@@ -31,6 +31,9 @@ class ProjectsController < ApplicationController
         format.html { redirect_to project_url(@project), notice: "Project was successfully created." }
         format.json { render :show, status: :created, location: @project }
       else
+        @project.errors.delete(:project_title)
+        @project.errors.delete(:project_description)
+        flash.now[:notice] = "Project title or description cannot be blank."
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @project.errors, status: :unprocessable_entity }
       end
