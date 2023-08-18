@@ -49,18 +49,24 @@
               <%= link_to "Sign Out", destroy_user_session_path, class:"nav-link"%>
             </li>
           </ul>
-      <% else %>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 "  >
 
-          <li class = "nav-item">
-            <%= link_to "Sign In", new_user_session_path, class:"nav-link"%>
-          </li>
 
-          <li class = "nav-item">
-            <%= link_to "Sign UP", new_user_registration_path, class:"btn btn-dark"%>
-          </li>
+          <% if current_user.admin%>
+            <%= link_to 'Admin Profile', admin_projects_path, class: 'btn btn-info' %><br><br>
+          <%end%>
 
-        </ul>
+        <% else %>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 "  >
+
+            <li class = "nav-item">
+              <%= link_to "Sign In", new_user_session_path, class:"nav-link"%>
+            </li>
+
+            <li class = "nav-item">
+              <%= link_to "Sign UP", new_user_registration_path, class:"btn btn-dark"%>
+            </li>
+
+          </ul>
       <% end%>
 
     </div>
