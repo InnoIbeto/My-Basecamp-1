@@ -1,10 +1,17 @@
 # Welcome to MY Basecamp 1
-
-# Introduction 
 My Basecamp 1 is a Project management website, an imitation of the management software originally created by 37signals,
 An American web software company based in Chicago, Illinois.
 
-# Description 
+## Task
+User Registration: users should be able to create a new user, delete a user, and as a new user, create an account yourself.
+
+Session: project needs to allow session creation (sign in) & session (sign out) 
+
+Role Permission: This means you will have two types of permissions, someone who is a user, and someone who is a user and an admin(ability to also remove and give the admin permission from a user.)
+
+Project: users should have ability to create new projects, see a list of the projects, edit exsisting projects and delete projects.
+
+## Description
 My Basecamp 1 enables signed up users to create, update and delete projects (CRUD). The user experience contains understandable/interactive captions which enables users to seamlessly navigate through the website and utilizes its functionalities with easy while the user interface is very simple with a color theme of white, blue and black. Texts and designs are properly laid out and are reactive to the width of the device screen.    
 
 The user authentication was accomplished using the Devise gem, Using Devise users sessions are properly created and stored in the database
@@ -15,15 +22,19 @@ Find the log-in details of an Admin user the Usage/features section
     
 I adhered to the Model-View-controller framework while developing the website with Ruby on Rails.
 
-# Installation 
+
+## Installation
 With Ruby on Rails the installation process has been completely simplified.
+
+clone repository to desired directory
 
 (Run on terminal): bundle install (and all the required dependencies stated in the Gemfile will be installed) 
 
+(lastly run server): rails s
+
 Needed prerequisites: Ruby, SQLite3
 
-# Usage/features 
-
+## Usage
 Basecamp logo: located in the top left nav-bar serves as a home button. Takes the user to the root-page once clicked
 
 Search bar: please NOTE the Search bar has not been properly integrated, just serves as a UI deco for now.
@@ -50,6 +61,8 @@ You can sign up to create a normal user
 
 Have fun!!
 
-# Programmed by:
+### The Core Team
 Ibeto Chukwukadibia Innocent
 
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px'></span>
